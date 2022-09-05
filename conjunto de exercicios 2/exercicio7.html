@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 7</H1>
+<div>======================================================</div>
+<span>O jogador tem </span><input type="text" id="idade"><span> </span><input type="button" value="Enviar" onclick="calc()">
+<div>--------------------------------------------------------------------</div>
+<span id="resposta"></span>
+
+<script>
+function calc(){    
+var idade
+var resposta
+idade =parseInt(document.getElementById("idade").value);
+resposta = document.getElementById("resposta");
+
+if (idade < 10){
+   resposta.textContent = "Jogador muito joven para competir." 
+}else if (idade < 12){
+    resposta.textContent = "Jogador pertence a categoria mirim." 
+}else if (idade < 12){
+    resposta.textContent = "Jogador pertence a categoria mirim." 
+}else if (idade < 15){
+    resposta.textContent = "Jogador pertence a categoria infantil." 
+}else if (idade < 17){
+    resposta.textContent = "Jogador pertence a categoria infanto-juvenil." 
+}else if (idade < 20){
+    resposta.textContent = "Jogador pertence a categoria juvenil." 
+}else{
+    resposta.textContent = "Jogador pertence a categoria adulto." 
+}
+
+
+}
+</script>
+</body>
+</html>

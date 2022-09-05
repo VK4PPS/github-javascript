@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 9</H1>
+<div>======================================================</div>
+<label>Valor do Produto</label>
+<input type="number" value="0" id="valorproduto">
+<div id="valorcondesconto"></div>
+<div id="valorparcela"></div>
+<div id="comissaodesconto"></div>
+<div id="comissaosemdesconto"></div>
+<br>
+<input type="button" value="Calcular" onclick='calcula()'>
+<div>--------------------------------------------------------------------</div>
+<div id="resposta"></div>
+
+<script>
+function calcula (){    
+
+var valorproduto;
+valorproduto = document.getElementById("valorproduto").value;
+
+var valorcondesconto = document.getElementById("valorcondesconto");
+valorcondesconto.textContent = "Valor com 10%  de desconto= "+(valorproduto-(valorproduto*10/100));
+
+var valorparcela = document.getElementById("valorparcela");
+valorparcela.textContent = "Parcelado em 3x sem desconto= "+(valorproduto/3);
+
+var comissaodesconto = document.getElementById("comissaodesconto");
+comissaodesconto.textContent = "Comissão do vendedor com desconto= "+(valorproduto-(valorproduto*10/100))*5/100;
+
+var comissaosemdesconto = document.getElementById("comissaosemdesconto");
+comissaosemdesconto.textContent = "Comissão do vendedor sem desconto= "+(valorproduto*5/100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+
+
+
+</body>
+</html>

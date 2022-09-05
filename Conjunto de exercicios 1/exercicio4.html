@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 4</H1>
+<div>======================================================</div>
+<label>Dividendo</label>
+<input id="dividendo" type="number" value="0" required >
+<br>
+<label>divisor</label>
+<input id="divisor" type="number" value="0" required >
+<br>
+<input type="button" value="Calcular" onclick='calcular()'>
+<p>Produto</p> <div id="produto"></div>
+
+<script>
+function calcular (){
+var divisor;
+var dividendo;
+
+divisor = document.getElementById("divisor").value;
+dividendo = document.getElementById("dividendo").value;
+
+produto = document.getElementById("produto");
+produto.textContent = dividendo / divisor;
+}
+</script>
+
+
+
+</body>
+</html>

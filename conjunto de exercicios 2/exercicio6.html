@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>.text {word-wrap:normal; width: 30%; }
+    
+    </style>
+</head>
+<body>
+<H1>Exercício 6</H1>
+<div>======================================================</div>
+
+<div>
+<h3>Questão 1</h3><span id="correto1"></span>
+<p class="text">Para Platão, o que havia de verdadeiro em Parmênides era que o objeto de 
+conhecimento é um objeto de razão e não de sensação, e era preciso estabelecer 
+uma relação entre objeto racional e objeto sensível ou material que privilegiasse 
+o primeiro em detrimento do segundo. Lenta, mas irresistivelmente, a Doutrina das 
+Ideias formava-se em sua mente.</p>
+
+
+<label>A</label> <input type="radio" name="opcao1"><span class="text">Estabelecendo um abismo intransponível entre as duas.</span>
+<br>
+<label>B</label> <input type="radio" name="opcao1"><span class="text">Privilegiando os sentidos e subordinando o conhecmento a eles.</span>
+<br>
+<label >C</label> <input id="acerto1"  type="radio" name="opcao1"><span class="text">Atendo-se à posição de Parmênides de que razão e sensação são inseparáveis.</span >
+<br>
+<label>D</label> <input type="radio" name="opcao1"><span class="text">Afirmando que a razão é capaz de gerar conhecimento, mas a sensação não.</span>
+</div>
+
+<div>--------------------------------------------------------------------</div>
+
+<div>
+<h3>Questão 2</h3><span id="correto2"></span>
+<p class="text">Esclarecimento é a saída do homem de sua menoridade, da qual ele próprio é culpado. 
+A menoridade é a incapacidade de fazer uso de seu entendimento sem a direção de outro indivíduo. 
+O homem é o próprio culpado dessa menoridade se a causa dela não se encontra na falta 
+de entendimento, mas na falta de decisão e coragem de servir-se de si mesmo sem a direção de outrem. 
+Tem coragem de fazer uso de teu próprio entendimento, tal é o lema do esclarecimento. 
+A preguiça e a covardia são as causas pelas quais uma tão grande parte dos homens, 
+depois que a natureza de há muito os libertou de uma condição estranha, continuem, no entanto,
+ de bom grado menores durante toda a vida.</p>
+
+
+<label>A</label> <input id="acerto2" type="radio" name="opcao2"><span class="text">a reivindicação de autonomia da capacidade racional como expressão da maioridade.</span>
+<br>
+<label>B</label> <input type="radio" name="opcao2"><span class="text">o exercício da racionalidade como pressuposto menor diante das verdades eternas.</span>
+<br>
+<label >C</label> <input type="radio" name="opcao2"><span class="text">a imposição de verdades matemáticas, com caráter objetivo, de forma heterônoma.</span >
+<br>
+<label>D</label> <input type="radio" name="opcao2"><span class="text">a compreensão de verdades religiosas que libertam o homem da falta de entendimento.</span>
+</div>
+
+<div>--------------------------------------------------------------------</div>
+
+<div>
+<h3>Questão 3</h3><span id="correto3"></span>
+<p class="text">Osmose é um processo espontâneo que ocorre em todos os organismos vivos e é essencial à manutenção da vida.
+Uma solução 0,15 mol/L de NaCl (cloreto de sódio) possui a mesma pressão osmótica das soluções presentes nas células humanas.
+A imersão de uma célula humana em uma solução 0,20 mol/L de NaCl tem, como consequência, a</p>
+
+
+<label>A</label> <input type="radio" name="opcao3"><span class="text">absorção de íons Na+ sobre a superfície da célula.</span>
+<br>
+<label>B</label> <input type="radio" name="opcao3"><span class="text">diminuição da concentração das soluções presentes na célula.</span>
+<br>
+<label >C</label> <input id="acerto3" type="radio" name="opcao3"><span class="text">transferência de íons Na+ da célula para a solução.</span >
+<br>
+<label>D</label> <input type="radio" name="opcao3"><span class="text">transferência de moléculas de água do interior da célula para a solução.</span>
+</div>
+
+<div>--------------------------------------------------------------------</div>
+
+<input type="button" value="Enviar" onclick="funcao()">
+
+<script>
+function funcao(){
+
+var acerto1 = document.getElementById("acerto1")
+var correto1 = document.getElementById("correto1")
+var acerto2 = document.getElementById("acerto2")
+var correto2 = document.getElementById("correto2")
+var acerto3 = document.getElementById("acerto3")
+var correto3 = document.getElementById("correto3")
+
+if (acerto1 = document.getElementById("acerto1").checked) {
+ correto1.textContent = "  RESPOSTA CORRETA" 
+}else{
+  correto1.textContent = "RESPOSTA INCORRETA OU NÂO SELECIONADA"    
+}
+
+if (acerto2 = document.getElementById("acerto2").checked) {
+ correto2.textContent = "  RESPOSTA CORRETA" 
+}else{
+  correto2.textContent = "RESPOSTA INCORRETA OU NÂO SELECIONADA"
+}
+
+if (acerto3 = document.getElementById("acerto3").checked) {
+ correto3.textContent = "  RESPOSTA CORRETA" 
+}else{
+  correto3.textContent = "RESPOSTA INCORRETA OU NÂO SELECIONADA"   
+}
+
+
+
+
+}
+</script>
+
+</body>
+</html>

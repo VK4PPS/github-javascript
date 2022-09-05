@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 1</H1>
+<div>======================================================</div>
+<p id="texto1">javaScript</p>
+<div>---------------------------------------</div>
+<input type="button" value="Mudar" onclick="mudar ()">
+<p id="texto2">Com javaScript</p>
+
+<script>
+function mudar (){
+
+
+var texto1 = document.getElementById("texto1").textContent;    
+var texto2 = document.getElementById("texto2");
+texto2.textContent = texto1+" funciona mesmo";
+}
+</script>
+</body>
+</html>

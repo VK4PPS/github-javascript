@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 9</H1>
+<div>======================================================</div>
+
+<p id="data"></p>
+<p id="frase"></p>
+<br>
+<br>
+<script>
+
+var data = new Date();
+var dia = data.getDate();                                       ///////Para Testar Outros dias do Mês apenas modifique o valor da Váriavel "dia"//////////
+var DiaMesAno = data.toLocaleDateString();
+var frase = document.getElementById("frase");
+
+document.getElementById("data").innerHTML = DiaMesAno;
+
+if (dia < 15){
+frase.innerHTML = "O mês só está começando"    
+}else if (dia < 23) {
+frase.innerHTML = "O mês está apenas na metade"    
+}else if (dia < 31){
+frase.innerHTML = "O mês já está acabando"       
+}
+
+
+
+</script>
+</body>
+</html>

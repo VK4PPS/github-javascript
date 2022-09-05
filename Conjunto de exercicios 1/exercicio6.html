@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 6</H1>
+<div>======================================================</div>
+<label>Fatores</label>
+<br>
+<input id="fator1" type="number" value="0" required >
+<br>
+<div>X</div>
+<input id="fator2" type="number" value="0" required >
+<br>
+<input type="button" value="Calcular" onclick='calcular()'>
+<p>Produto</p> <div id="produto"></div>
+
+<script>
+function calcular (){
+var fator1;
+var fator2;
+
+fator1 = document.getElementById("fator1").value;
+fator2 = document.getElementById("fator2").value;
+
+produto = document.getElementById("produto");
+produto.textContent = fator1 * fator2;
+}
+</script>
+
+
+
+</body>
+</html>

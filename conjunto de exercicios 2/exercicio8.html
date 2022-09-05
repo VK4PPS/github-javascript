@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 8</H1>
+<div>======================================================</div>
+<p id="hora"></p>
+
+<script>
+var tempo = setInterval(atualizar, 1000);
+
+function atualizar ()  {
+var data = new Date();
+var hora = data.toLocaleTimeString();
+var dia = data.toLocaleDateString();
+document.getElementById("hora").innerHTML = "HORA: "+hora+"<br>"+"DATA: "+dia;
+
+
+}
+</script>
+</body>
+</html>

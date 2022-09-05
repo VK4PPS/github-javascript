@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 1</H1>
+<div>======================================================</div>
+<form>
+<select id="seletor" onclick='selecao()'>
+ <option value="CparaF">Celsius para Fahrenheit</option>
+ <option value="FparaC">Fahrenheit para Celsius</option>
+</select>
+</form>
+<div>--------------------------------------------------------------------</div>
+
+<input type="text" id="temp" value="0"><span id="letra"></span>
+<div><input type="button" value="Converter" onclick="calc()"></div>
+<br>
+<div id="resultado"></div>
+<script>
+function calc (){
+
+var seletor
+var temp
+var letra
+var resultado
+
+seletor = document.getElementById("seletor").value;
+temp =parseInt(document.getElementById("temp").value)
+letra  = document.getElementById("letra")
+resultado  = document.getElementById("resultado")
+
+if (seletor == "CparaF") {
+resultado.textContent = temp+"º Celsius é igual a "+((1.8*temp)+32)+"º Fahrenheit."           
+} else {
+resultado.textContent = temp+"º Fahrenheit é igual a "+Math.ceil((temp-32)/1.8)+"º Celsius."
+}
+
+}
+
+
+function selecao (){
+
+var seletor
+seletor = document.getElementById("seletor").value;
+
+if (seletor == "CparaF") {
+ letra.textContent = "Celsius"
+
+} else {
+  letra.textContent = "Fahrenheit"   
+}    
+
+}
+</script>
+
+
+
+
+</body>
+</html>

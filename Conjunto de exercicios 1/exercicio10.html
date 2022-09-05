@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 10</H1>
+<div>======================================================</div>
+<label>Metragem 1 (metros):</label>
+<input type="text" value="0" id="metragem1">
+<br>
+<label>Metragem 2 (metros):</label>
+<input type="text" value="0" id="metragem2">
+<br>
+<input type="button" value="Calcular Área" onclick='calcula()'>
+<br>
+<div id="resultado"></div>
+<div>--------------------------------------------------------------------</div>
+
+<script>
+function calcula (){    
+
+var metragem1;
+var metragem2;
+
+metragem1 =parseInt(document.getElementById("metragem1").value);
+metragem2 =parseInt(document.getElementById("metragem2").value);
+
+var resultado = document.getElementById("resultado");
+resultado.textContent = "Área: "+(metragem1*metragem2)+"m²";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+
+
+
+</body>
+</html>

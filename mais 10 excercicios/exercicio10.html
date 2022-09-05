@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1>Exercício 10</H1>
+<div>======================================================</div>
+<label>Velocidade </label><input id="velocidade" type="number"><span> </span> <input type="button" value="Enviar" onclick="calc()">
+<div>--------------------------------------------------------------------</div>
+<p id="resposta"></p>
+
+<script>
+function calc (){
+
+var velocidade = document.getElementById("velocidade").value
+var max = 60+(60*5/100) 
+var min = 60-(60*10/100)
+var resposta = document.getElementById("resposta")
+
+if (velocidade > max) {
+resposta.innerHTML = "Velocidade Acima do Limite"
+}else if (velocidade < min) {
+resposta.innerHTML = "Velocidade Abaixo do Limite"
+}else {
+resposta.innerHTML = "Velocidade Aceitável"
+}
+
+
+
+
+
+
+
+
+}
+</script>
+</body>
+</html>
